@@ -11,6 +11,6 @@
 </div>
 {% endif %}
 {% for subject in subjects %}
-<a href="{% url 'view_syllabus' subject.id %}"><li>{{subject.subject_name}}</li></a>
+<li>{{subject.subject_name}}</li><a href="{% url 'view_syllabus' subject.id %}">Syllabus</a><a href="{% url 'view_notes' subject.id %}">Notes</a>
 {% endfor %}
 {% endblock content %}

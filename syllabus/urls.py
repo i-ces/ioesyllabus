@@ -16,12 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from ioesyllabus import urls as syllabus_urls
+from ioenotes import urls as notes_urls
 from ioesyllabus.views import homepage
 
 urlpatterns = [
     path('', homepage, name='homepage'),
     path('admin/', admin.site.urls),
-    path('syllabus/', include(syllabus_urls))
+    path('syllabus/', include(syllabus_urls)),
+    path('notes/', include(notes_urls))
 ]
 
 handler404 = 'ioesyllabus.views.view_404'

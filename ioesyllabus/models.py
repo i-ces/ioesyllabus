@@ -3,7 +3,7 @@ from django.db import models
 class Subject(models.Model):
     FACULTY_CHOICES = (
         ('BCT', 'BCT'),
-        ('BEX', 'BEX'),
+        ('BEI', 'BEI'),
         ('BCE', 'BCE')
     )
     YEAR_CHOICES = (

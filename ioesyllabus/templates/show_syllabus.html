@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
+
 {% block content %}
-<h1>{{subject.subject_name}}</h1>
-<h2>{{subject.content}}</h2>
-<h2>{{subject.references}}</h2>
+<h1>Subject Name:{{subject.subject_name}}</h1>
+<h2>Content:{{subject.content}}</h2>
+<h2>References:{{subject.references}}</h2>
+<h3>Lecture Hours: {{subject.lecture_hours}}</h3>
+<h3>Practical Hours: {{subject.practical_hours}}</h3>
+<h3>Total Marks:{{subject.total_marks}}</h3>
+<h3>Faculty:{{subject.faculty}}</h3>
+<h3>Year:{{subject.year}}</h3>
+<h3>Part:{{subject.part}}</h3>
+
 {% endblock content %}
